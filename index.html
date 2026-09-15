@@ -1,321 +1,1286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ndlolatji - Professional maintenance and construction services in Johannesburg and surrounding areas.">
-    <title>Ndlolatji | Maintenance & Construction Services</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta name="description" content="Ndlolatji Maintenance & Construction Solutions. Professional electrical, plumbing, ceilings, garage doors, tiling, carpentry, carports, driveways and clear view fencing services in Johannesburg and surrounding areas.">
 
-        html {
-            scroll-behavior: smooth;
-        }
+<title>Ndlolatji | Maintenance & Construction Solutions</title>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            background: #f7f7f7;
-        }
+<style>
 
-        header {
-            background: #111;
-            color: white;
-            padding: 18px 6%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .nav {
-            max-width: 1200px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.7;
+}
 
-        .logo span {
-            color: #f4b400;
-        }
+header {
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
-        }
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        nav a:hover {
-            color: #f4b400;
-        }
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 
-        .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #111 0%, #292929 55%, #444 100%);
-            color: white;
-        }
+.logo span {
+    color: #f4b400;
+}
 
-        .hero-content {
-            max-width: 900px;
-        }
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
 
-        .hero h1 {
-            font-size: 58px;
-            margin-bottom: 15px;
-        }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .hero h1 span {
-            color: #f4b400;
-        }
+.nav-links a:hover {
+    color: #f4b400;
+}
 
-        .hero h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
+/* HERO */
 
-        .hero p {
-            font-size: 19px;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #ddd;
-        }
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background:
+        linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)),
+        linear-gradient(135deg, #111, #444);
+}
 
-        .btn {
-            display: inline-block;
-            padding: 14px 25px;
-            margin: 7px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+.hero-content {
+    max-width: 900px;
+}
 
-        .btn-primary {
-            background: #f4b400;
-            color: #111;
-        }
+.hero h1 {
+    font-size: 68px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
 
-        .btn-primary:hover {
-            background: #ffd35a;
-            transform: translateY(-2px);
-        }
+.hero h1 span {
+    color: #f4b400;
+}
 
-        .btn-secondary {
-            border: 2px solid white;
-            color: white;
-        }
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 
-        .btn-secondary:hover {
-            background: white;
-            color: #111;
-        }
+.hero p {
+    font-size: 19px;
+    color: #ddd;
+    max-width: 760px;
+    margin: auto;
+}
 
-        section {
-            padding: 70px 6%;
-        }
+.hero-buttons {
+    margin-top: 35px;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
+.btn {
+    display: inline-block;
+    padding: 15px 28px;
+    margin: 7px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 45px;
-        }
+.btn-primary {
+    background: #f4b400;
+    color: #111;
+}
 
-        .section-title h2 {
-            font-size: 38px;
-            margin-bottom: 10px;
-        }
+.btn-primary:hover {
+    background: #ffd35a;
+    transform: translateY(-3px);
+}
 
-        .section-title p {
-            color: #666;
-        }
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+}
 
-        .about {
-            background: white;
-        }
+.btn-outline:hover {
+    background: white;
+    color: #111;
+}
 
-        .about-text {
-            max-width: 850px;
-            margin: auto;
-            text-align: center;
-            font-size: 18px;
-        }
+/* GENERAL */
 
-        .services {
-            background: #f1f1f1;
-        }
+section {
+    padding: 80px 20px;
+}
 
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 22px;
-        }
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
 
-        .service-card {
-            background: white;
-            padding: 30px 22px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
+.section-heading h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 
-        .service-icon {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+.section-heading h2 span {
+    color: #f4b400;
+}
 
-        .service-card h3 {
-            margin-bottom: 10px;
-            font-size: 21px;
-        }
+.section-heading p {
+    color: #666;
+    font-size: 17px;
+}
 
-        .why {
-            background: white;
-        }
+/* ABOUT */
 
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
+.about {
+    background: white;
+}
 
-        .why-card {
-            padding: 25px;
-            text-align: center;
-            border-left: 4px solid #f4b400;
-            background: #fafafa;
-        }
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
 
-        .contact {
-            background: #111;
-            color: white;
-        }
+.about-text h3 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
 
-        .contact .section-title p {
-            color: #ccc;
-        }
+.about-text p {
+    margin-bottom: 15px;
+    color: #555;
+}
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            max-width: 900px;
-            margin: auto;
-        }
+.about-box {
+    background: #111;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+    border-top: 5px solid #f4b400;
+}
 
-        .contact-box {
-            background: #222;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-        }
+.about-box h3 {
+    color: #f4b400;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
 
-        .contact-box h3 {
-            color: #f4b400;
-            margin-bottom: 10px;
-        }
+/* MISSION */
 
-        .contact-box a {
-            color: white;
-            text-decoration: none;
-        }
+.mission {
+    background: #eeeeee;
+}
 
-        footer {
-            background: #080808;
-            color: #aaa;
-            text-align: center;
-            padding: 25px 15px;
-        }
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
 
-        footer strong {
-            color: #f4b400;
-        }
+.mission-card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+}
 
-        @media (max-width: 800px) {
-            .nav {
-                flex-direction: column;
-                gap: 12px;
-            }
+.mission-card .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
 
-            nav a {
-                margin: 0 7px;
-                font-size: 14px;
-            }
+.mission-card h3 {
+    margin-bottom: 12px;
+    font-size: 23px;
+}
 
-            .hero h1 {
-                font-size: 42px;
-            }
+/* SERVICES */
 
-            .hero h2 {
-                font-size: 22px;
-            }
+.services {
+    background: #f8f8f8;
+}
 
-            .service-grid,
-            .why-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
 
-            section {
-                padding: 55px 5%;
-            }
-        }
-    </style>
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    border-left: 5px solid #f4b400;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.service-icon {
+    font-size: 38px;
+}
+
+.service-card h3 {
+    font-size: 23px;
+}
+
+.service-card p {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.service-card ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+.service-card li {
+    margin-bottom: 5px;
+}
+
+/* WHY US */
+
+.why {
+    background: white;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.why-card {
+    text-align: center;
+    padding: 30px 18px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+.why-card h3 {
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #666;
+}
+
+/* PROCESS */
+
+.process {
+    background: #eeeeee;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.process-card {
+    text-align: center;
+    padding: 25px;
+}
+
+.number {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    background: #f4b400;
+    color: #111;
+    font-weight: bold;
+    font-size: 22px;
+    margin: auto auto 15px;
+}
+
+/* SERVICE AREA */
+
+.area {
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.area h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.area p {
+    color: #ddd;
+    max-width: 750px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.contact-card {
+    background: #111;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-card h3 {
+    color: #f4b400;
+    margin-bottom: 10px;
+}
+
+.contact-card a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.quote {
+    text-align: center;
+    margin-top: 45px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #080808;
+    color: #aaa;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer strong {
+    color: #f4b400;
+}
+
+.footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    color: #f4b400;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #f4b400;
+}
+
+/* MOBILE */
+
+@media(max-width: 850px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .about-content,
+    .services-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-grid,
+    .why-grid,
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 550px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section-heading h2,
+    .area h2 {
+        font-size: 31px;
+    }
+
+    .mission-grid,
+    .why-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 17px;
+    }
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-    <div class="nav">
-        <div class="logo">NDLO<span>LATJI</span></div>
+<!-- NAVIGATION -->
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
+<header>
+<div class="navbar">
+
+<div class="logo">
+NDLO<span>LATJI</span>
+</div>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
 </header>
 
+
+<!-- HOME -->
+
 <section class="hero" id="home">
-    <div class="hero-content">
-        <h1>NDLO<span>LATJI</span></h1>
 
-        <h2>Maintenance & Construction Solutions</h2>
+<div class="hero-content">
 
-        <p>
-            Professional, reliable and quality maintenance services
-            for homes, businesses and properties in Johannesburg
-            and surrounding areas.
-        </p>
+<h1>NDLO<span>LATJI</span></h1>
 
-        <a href="#services" class="btn btn-primary">Our Services</a>
+<h2>Maintenance & Construction Solutions</h2>
 
-        <a href="https://wa.me/27606841924" class="
+<p>
+Professional property maintenance and construction solutions
+delivered with quality, reliability and attention to detail.
+</p>
+
+<p>
+<strong>Proudly serving Johannesburg & surrounding areas.</strong>
+</p>
+
+<div class="hero-buttons">
+
+<a href="#services" class="btn btn-primary">
+VIEW OUR SERVICES
+</a>
+
+<a href="https://wa.me/27606841924" class="btn btn-outline">
+WHATSAPP US
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>About <span>Ndlolatji</span></h2>
+
+<p>Professional service. Quality workmanship. Reliable solutions.</p>
+
+</div>
+
+<div class="about-content">
+
+<div class="about-text">
+
+<h3>Your Property. Our Responsibility.</h3>
+
+<p>
+Ndlolatji is a South African maintenance and construction
+solutions company focused on providing professional,
+reliable and quality services to residential, commercial
+and property clients.
+</p>
+
+<p>
+We understand that your property is an important investment.
+Our goal is to help customers maintain, improve and protect
+their properties through dependable workmanship and
+professional service.
+</p>
+
+<p>
+From small repairs and maintenance jobs to larger property
+improvement projects, Ndlolatji aims to provide practical
+solutions that meet our customers' needs.
+</p>
+
+</div>
+
+<div class="about-box">
+
+<h3>Our Commitment</h3>
+
+<p>
+At Ndlolatji, we believe that excellent service starts with
+understanding the customer's needs.
+</p>
+
+<br>
+
+<p>
+We are committed to professionalism, honest communication,
+quality workmanship and customer satisfaction.
+</p>
+
+<br>
+
+<p>
+<strong>Our goal is simple: deliver excellent services and
+build long-term relationships with our customers.</strong>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MISSION / VISION / VALUES -->
+
+<section class="mission">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Our <span>Foundation</span></h2>
+
+<p>The principles behind Ndlolatji.</p>
+
+</div>
+
+<div class="mission-grid">
+
+<div class="mission-card">
+
+<div class="icon">🎯</div>
+
+<h3>Our Mission</h3>
+
+<p>
+To provide dependable maintenance and construction
+solutions while delivering quality workmanship and
+excellent customer service.
+</p>
+
+</div>
+
+<div class="mission-card">
+
+<div class="icon">👁️</div>
+
+<h3>Our Vision</h3>
+
+<p>
+To grow Ndlolatji into one of the most trusted and
+respected maintenance and construction service
+companies in South Africa.
+</p>
+
+</div>
+
+<div class="mission-card">
+
+<div class="icon">⭐</div>
+
+<h3>Our Values</h3>
+
+<p>
+Quality, integrity, reliability, professionalism,
+respect, safety and customer satisfaction guide
+the way we work.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Our <span>Services</span></h2>
+
+<p>
+Comprehensive property maintenance and construction solutions.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<!-- ELECTRICAL -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">⚡</div>
+
+<h3>Electrical Installations</h3>
+
+</div>
+
+<p>
+Professional electrical installation, maintenance and
+repair solutions for residential and commercial properties.
+</p>
+
+<ul>
+<li>Electrical installations</li>
+<li>Lighting installations</li>
+<li>Plugs and switches</li>
+<li>Electrical repairs</li>
+<li>Fault finding and maintenance</li>
+</ul>
+
+</div>
+
+
+<!-- PLUMBING -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">🔧</div>
+
+<h3>Plumbing & Repairs</h3>
+
+</div>
+
+<p>
+Reliable plumbing and general repair services designed
+to keep your property functional and well maintained.
+</p>
+
+<ul>
+<li>Leak repairs</li>
+<li>Pipe repairs</li>
+<li>Taps and fittings</li>
+<li>General plumbing maintenance</li>
+<li>Property repairs</li>
+</ul>
+
+</div>
+
+
+<!-- CEILINGS -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">🏠</div>
+
+<h3>Ceiling Solutions</h3>
+
+</div>
+
+<p>
+Professional ceiling installation, repairs and finishing
+to improve the appearance and functionality of your property.
+</p>
+
+<ul>
+<li>Ceiling installation</li>
+<li>Ceiling repairs</li>
+<li>Replacement work</li>
+<li>Finishing and maintenance</li>
+</ul>
+
+</div>
+
+
+<!-- GARAGE DOORS -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">🚪</div>
+
+<h3>Garage Door Solutions</h3>
+
+</div>
+
+<p>
+Garage door solutions focused on functionality, security
+and convenience.
+</p>
+
+<ul>
+<li>Garage door installation</li>
+<li>Garage door repairs</li>
+<li>Maintenance</li>
+<li>Door adjustments</li>
+<li>General garage door solutions</li>
+</ul>
+
+</div>
+
+
+<!-- TILING -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">⬜</div>
+
+<h3>Tiling & Flooring</h3>
+
+</div>
+
+<p>
+Quality tiling and flooring solutions for residential
+and commercial spaces.
+</p>
+
+<ul>
+<li>Floor tiling</li>
+<li>Wall tiling</li>
+<li>Bathroom tiling</li>
+<li>Kitchen tiling</li>
+<li>Flooring installation and improvements</li>
+</ul>
+
+</div>
+
+
+<!-- CARPENTRY -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">🪚</div>
+
+<h3>Carpentry</h3>
+
+</div>
+
+<p>
+Practical carpentry solutions for property improvements,
+repairs and installations.
+</p>
+
+<ul>
+<li>General carpentry</li>
+<li>Repairs</li>
+<li>Woodwork</li>
+<li>Property improvements</li>
+<li>Custom carpentry solutions</li>
+</ul>
+
+</div>
+
+
+<!-- CARPORTS -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">🚗</div>
+
+<h3>Carports & Driveways</h3>
+
+</div>
+
+<p>
+Outdoor property solutions that improve functionality,
+appearance and value.
+</p>
+
+<ul>
+<li>Carport solutions</li>
+<li>Driveway construction</li>
+<li>Driveway improvements</li>
+<li>Property entrances</li>
+<li>Outdoor maintenance</li>
+</ul>
+
+</div>
+
+
+<!-- FENCING -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">🛡️</div>
+
+<h3>Clear View Fencing</h3>
+
+</div>
+
+<p>
+Modern fencing solutions designed to provide security
+while maintaining visibility and a clean appearance.
+</p>
+
+<ul>
+<li>Clear view fencing installation</li>
+<li>Property perimeter fencing</li>
+<li>Security fencing solutions</li>
+<li>Fence repairs and maintenance</li>
+</ul>
+
+</div>
+
+
+<!-- GENERAL -->
+
+<div class="service-card">
+
+<div class="service-title">
+
+<div class="service-icon">🏗️</div>
+
+<h3>General Maintenance</h3>
+
+</div>
+
+<p>
+General property maintenance solutions for customers
+who need reliable assistance keeping their properties
+in good condition.
+</p>
+
+<ul>
+<li>Property maintenance</li>
+<li>General repairs</li>
+<li>Maintenance projects</li>
+<li>Property improvements</li>
+<li>Minor construction work</li>
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="why" id="why">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Why Choose <span>Ndlolatji?</span></h2>
+
+<p>We aim to make every project a positive experience.</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<h3>Quality</h3>
+
+<p>
+We focus on quality workmanship and professional
+results.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>Reliability</h3>
+
+<p>
+We value punctuality, communication and dependable
+service.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>Professionalism</h3>
+
+<p>
+We treat every customer and every property with
+respect.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>Customer Focus</h3>
+
+<p>
+We listen to our customers and work towards practical
+solutions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>How We <span>Work</span></h2>
+
+<p>A simple approach from enquiry to completion.</p>
+
+</div>
+
+<div class="process-grid">
+
+<div class="process-card">
+
+<div class="number">1</div>
+
+<h3>Contact Us</h3>
+
+<p>
+Tell us what service or project you need.
+</p>
+
+</div>
+
+<div class="process-card">
+
+<div class="number">2</div>
+
+<h3>Assessment</h3>
+
+<p>
+We discuss your requirements and determine the
+appropriate solution.
+</p>
+
+</div>
+
+<div class="process-card">
+
+<div class="number">3</div>
+
+<h3>Quotation</h3>
+
+<p>
+We provide a quotation based on the agreed work
+requirements.
+</p>
+
+</div>
+
+<div class="process-card">
+
+<div class="number">4</div>
+
+<h3>Project</h3>
+
+<p>
+Our goal is to complete the work professionally
+and to the agreed requirements.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICE AREA -->
+
+<section class="area">
+
+<div class="container">
+
+<h2>Serving Johannesburg & Surrounding Areas</h2>
+
+<p>
+Ndlolatji provides maintenance and construction solutions
+to residential, commercial and property clients in
+Johannesburg and surrounding areas.
+</p>
+
+<div style="margin-top:30px;">
+
+<a href="https://wa.me/27606841924" class="btn btn-primary">
+REQUEST A QUOTE
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<h2>Contact <span>Ndlolatji</span></h2>
+
+<p>
+Ready to discuss your project? Get in touch with us.
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>📞 Phone</h3>
+
+<p>
+<a href="tel:0606841924">
+060 684 1924
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>📧 Email</h3>
+
+<p>
+<a href="mailto:musaarthur12@gmail.com">
+musaarthur12@gmail.com
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>💬 WhatsApp</h3>
+
+<p>
+<a href="https://wa.me/27606841924">
+Chat with Ndlolatji
+</a>
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>📍 Service Area</h3>
+
+<p>
+Johannesburg & Surrounding Areas
+</p>
+
+</div>
+
+
+</div>
+
+<div class="quote">
+
+<h3>Need a maintenance or construction solution?</h3>
+
+<p>
+Contact Ndlolatji today for more information.
+</p>
+
+<a href="https://wa.me/27606841924" class="btn btn-primary">
+GET A QUOTE ON WHATSAPP
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-logo">
+NDLO<span>LATJI</span>
+</div>
+
+<p>
+Maintenance & Construction Solutions
+</p>
+
+<div class="footer-links">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<p>
+© 2026 <strong>Ndlolatji</strong>. All Rights Reserved.
+</p>
+
+<p>
+Quality • Reliability • Professionalism
+</p>
+
+</footer>
+
+</body>
+</html>
